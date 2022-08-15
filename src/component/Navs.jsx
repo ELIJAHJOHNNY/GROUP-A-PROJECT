@@ -9,11 +9,11 @@ const Navs = () => {
   return (
     <section className='container'>
       <div className="logo">
-        <img id='image1' src={logo} alt="NETFLIX" />
+        <Link to='/'><img id='image1' src={logo} alt="NETFLIX" /></Link>
       </div>
       <div className="navlinks">
         <ul className='nav1'>
-            <li><Link to='/'>Home</Link></li>
+            <li><Link to='/Home'>Home</Link></li>
             <li><Link to='/TVshows'>TV Shows</Link></li>
             <li><Link to='/Movies'>Movies</Link></li>
             <li><Link to='/New'>New &#38; Popular</Link></li>

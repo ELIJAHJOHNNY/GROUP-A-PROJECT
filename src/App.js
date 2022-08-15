@@ -8,6 +8,7 @@ function App() {
       <Routes>
         <Route path='/' element={<SharedLayout/>}>
           <Route index element={<Home/>} />
+          <Route path='/Home' element={<Home/>} />
         </Route>
       </Routes>
     </div>
