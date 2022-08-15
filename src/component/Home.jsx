@@ -1,10 +1,9 @@
 import React from 'react';
-import Navs from './Navs';
 
 function Home() {
   return (
     <div>
-      <Navs/>
+      <h1>Home</h1>
     </div>
   )
 }
