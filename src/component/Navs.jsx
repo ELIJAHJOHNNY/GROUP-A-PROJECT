@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const Navs = () => {
   return (
-    <section className='container'>
+    <section className='nav-container'>
       <div className="logo">
         <Link to='/'><img id='image1' src={logo} alt="NETFLIX" /></Link>
       </div>
@@ -21,10 +21,10 @@ const Navs = () => {
             <li><Link to='/Languages'>Browse by Languages</Link></li>
         </ul>
         <ul className='nav2'>
-            <li><FontAwesomeIcon icon={faSearch}/></li>
+            <li><FontAwesomeIcon id='search-icon' icon={faSearch}/></li>
             <li><Link to='Kids'>Kids</Link></li>
-            <li><Link to='Notification'><FontAwesomeIcon icon={faBell}/></Link></li>
-            <li><Link to='User'><FontAwesomeIcon icon={faUser}/></Link></li>
+            <li><Link to='Notification'><FontAwesomeIcon id='notify' icon={faBell}/></Link></li>
+            <li><Link to='User'><FontAwesomeIcon id='user' icon={faUser}/></Link></li>
         </ul>
       </div>
     </section>

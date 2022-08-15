@@ -5,6 +5,7 @@
 }
 
 .shared-container{
+    padding: 1.5rem 2rem;
     min-height: 100vh;
-    /* background-color: gold; */
+    background-color: #000;
 }
