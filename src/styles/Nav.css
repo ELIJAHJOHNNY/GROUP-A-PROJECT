@@ -52,10 +52,10 @@
     text-decoration: none;
     color: white;
     font-weight: 600;
+    transition: opacity 0.4s;
 }
 
 .nav-container .navlinks .nav1 a:hover,
 .nav-container .navlinks .nav2 a:hover{
     opacity: 0.7;
-    
 }
