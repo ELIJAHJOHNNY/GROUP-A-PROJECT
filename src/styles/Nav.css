@@ -12,7 +12,6 @@
 
 .nav-container .logo{
     flex: 0.1;
-    align-self: flex-end;
 }
 
 .nav-container .logo #image1{
@@ -58,4 +57,44 @@
 .nav-container .navlinks .nav1 a:hover,
 .nav-container .navlinks .nav2 a:hover{
     opacity: 0.7;
+}
+
+.nav-container .logo p{
+    display: none;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 1024px) {
+    .nav-container .navlinks .nav1{
+        display: none;
+    }
+
+    .nav-container .logo{
+        display: flex;
+        align-items: center;
+        flex: 3.5;
+        /* border: 1px solid; */
+    }
+
+    .nav-container .logo p #chevron{
+         vertical-align: middle;
+    }
+
+    .nav-container .logo p{
+        margin-left: 1rem;
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-container{
+        align-items: center;
+        justify-content: space-between;
+        /* border: 1px solid; */
+    }
+
+    .nav-container .navlinks .nav2{
+        flex: 1;
+        /* border: 1px solid; */
+    }
 }

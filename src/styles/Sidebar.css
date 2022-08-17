@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-container .nav1 li{
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+.sidebar-container .nav1 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: opacity 0.4s;
+}
+
+.sidebar-container .nav1 a:hover{
+    opacity: 0.7;
+}

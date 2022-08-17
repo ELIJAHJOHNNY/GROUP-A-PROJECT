@@ -2,14 +2,17 @@ import React from 'react';
 import '../styles/Nav.css';
 import logo from '../images/logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faBell, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faBell, faUser, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import Sidebar from './Sidebar';
 
 const Navs = () => {
   return (
+    <>
     <section className='nav-container'>
       <div className="logo">
         <Link to='/'><img id='image1' src={logo} alt="NETFLIX" /></Link>
+        <p onMouseOver={() => console.log('hi')}>Browse <FontAwesomeIcon id='chevron' icon={faChevronDown}/></p>
       </div>
       <div className="navlinks">
         <ul className='nav1'>
@@ -28,6 +31,8 @@ const Navs = () => {
         </ul>
       </div>
     </section>
+    <Sidebar/>
+    </>
   )
 }
 
