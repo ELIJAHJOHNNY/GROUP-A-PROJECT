@@ -4,15 +4,22 @@ import logo from '../images/logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faBell, faUser, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { handleHamburgerToggle } from '../reduxSlice/hamburgerSlice'
 import Sidebar from './Sidebar';
 
 const Navs = () => {
+  const dispatch = useDispatch();
+  
+
   return (
     <>
     <section className='nav-container'>
       <div className="logo">
         <Link to='/'><img id='image1' src={logo} alt="NETFLIX" /></Link>
-        <p onMouseOver={() => console.log('hi')}>Browse <FontAwesomeIcon id='chevron' icon={faChevronDown}/></p>
+        <p onMouseOver={() => dispatch(handleHamburgerToggle())} onClick={() => dispatch(handleHamburgerToggle())}>
+          Browse 
+        <FontAwesomeIcon id='chevron' icon={faChevronDown}/></p>
       </div>
       <div className="navlinks">
         <ul className='nav1'>
