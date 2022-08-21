@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-container .nav1{
+    position: absolute;
+    background: rgb(143, 8, 8);
+    top: 70px;
+    left: 15%;
+    padding: 2em 1.5em;
+    cursor: pointer;
+    display: none;
+}
+
+.sidebar-container .show-nav1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sidebar-container .nav1 li{
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+.sidebar-container .nav1 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: opacity 0.4s;
+}
+
+.sidebar-container .nav1 a:hover{
+    opacity: 0.7;
+}
