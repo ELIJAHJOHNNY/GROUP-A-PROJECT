@@ -1,5 +1,5 @@
 import Home from './component/Home';
-import Forgot from './component/Forgot';
+// import Forgot from './component/Forgot';
 import SharedLayout from './component/SharedLayout';
 import { Route, Routes } from 'react-router-dom'
 
@@ -10,7 +10,7 @@ function App() {
         <Route path='/' element={<SharedLayout/>}>
           <Route index element={<Home/>} />
           <Route path='/Home' element={<Home/>} />
-          <Route path='/forgot' element={<Forgot/>} />
+          {/* <Route path='/Forgot' element={<Forgot/>} /> */}
         </Route>
       </Routes>
     </div>
