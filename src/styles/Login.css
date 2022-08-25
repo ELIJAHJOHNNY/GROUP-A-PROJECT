@@ -10,7 +10,7 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0,0,0, .6)), url(../images/background.jpg);
     overflow-x: hidden;
 }
-.container {
+.login-container {
     min-height: 140vh;
 }
 .logo {
@@ -86,9 +86,6 @@ form button {
     color: #e50914;
     
 }
-input{
-
-}
 input {
  background-color: #e50914;
  color: #e50914;
@@ -114,7 +111,7 @@ input {
 }
 .facebook-login img {
     width: 20px;
-    aspect-ratio: 1;
+    /* aspect-ratio: 1; */
     margin-right: 10px;
 }
 .facebook-login a {
