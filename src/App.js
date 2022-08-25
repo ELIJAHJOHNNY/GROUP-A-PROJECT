@@ -10,6 +10,7 @@ import Notifications from './component/Notifications';
 import User from './component/User';
 import SharedLayout from './component/SharedLayout';
 import { Route, Routes } from 'react-router-dom';
+import Login from './component/Login';
 // import Forgot from './component/Forgot';
 
 
@@ -25,6 +26,7 @@ function App() {
           <Route path='/News' element={<News/>} />
           <Route path='/MyList' element={<MyList/>} />
           <Route path='/Languages' element={<Languages/>} />
+          <Route path='/Login' element={<Login/>}/>
           <Route path='/Kids' element={<Kids/>} />
           <Route path='/Notifications' element={<Notifications/>} />
           <Route path='/User' element={<User/>} />
