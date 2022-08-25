@@ -19,7 +19,8 @@ function App() {
     <div>
       <Routes>
         <Route path='/' element={<SharedLayout/>}>
-          <Route index element={<Home/>} />
+          {/* <Route index element={<Home/>} /> */}
+          <Route index element={<Login/>} />
           <Route path='/Home' element={<Home/>} />
           <Route path='/TVshows' element={<TVshows/>} />
           <Route path='/Movies' element={<Movies/>} />
