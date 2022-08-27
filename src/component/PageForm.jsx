@@ -1,6 +1,6 @@
 import React from "react";
-import logo from '../logo.png';
-import './PageForm.css';
+import logo from '../images/logo.png';
+import '../styles/PageForm.css';
 import { useState } from "react";
 
 function PageForm(props) {
@@ -10,8 +10,11 @@ function PageForm(props) {
         <>
           <div>
            <div className="formhead">
-              <img className="formhead-item formhead-item1" src={logo} alt="" />
-              <h2 className="formhead-item formhead-item2">Sign In</h2>
+              <img className="formhead-item formhead-item1" src={logo} alt="logo" />
+              {/* <h2 className="formhead-item formhead-item2">Sign In</h2> */}
+              <div className="formhead-item formhead-item2">
+                <a href="/Login">Sign In</a>
+              </div>
            </div>
            <form className="formbox">
                 <p>Step 1 0f 3</p>
@@ -22,9 +25,9 @@ function PageForm(props) {
                 <div>
                 <input type="email" placeholder="Email" className="forminput" required /><br></br>
                 <input type="password" placeholder="Add a Password" className="forminput" required /><br></br>
-                <label class="box">Please do not Email me Netflix special offers
+                <label className="box">Please do not Email me Netflix special offers
                 <input type="checkbox" />
-                <span class="mark"></span>
+                <span className="mark"></span>
                 </label>
                 </div>
                 <button className="formbtn">Next</button>
@@ -50,8 +53,8 @@ function PageForm(props) {
                         <div>
                             <a href="#">Privacy</a>
                         </div>
-            </div> 
-            </div>
+                    </div> 
+                </div>
             </div>
            </div>   
         </>

@@ -7,10 +7,11 @@
 }
 
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0,0,0, .6)), url(../images/background.jpg);
+    /* background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0,0,0, .6)), url(../images/background.jpg); */
     overflow-x: hidden;
 }
 .login-container {
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0,0,0, .6)), url(../images/background.jpg);
     min-height: 140vh;
 }
 .logo {
@@ -176,4 +177,8 @@ footer .links a {
     width: 250px;
     margin-bottom: 16px;
     font-size: 0.8rem;
+}
+
+#remember{
+    vertical-align: middle;
 }

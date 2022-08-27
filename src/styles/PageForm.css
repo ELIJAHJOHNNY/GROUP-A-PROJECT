@@ -5,7 +5,7 @@
    
    .formhead-item {
      display: inline-block;
-     color: #E50914;
+     color: #e50914;;
   }
    
    .formhead-item1 {
@@ -59,8 +59,11 @@
   }
 
    /* Hide the default style of the checkbox */
-   input[type=checkbox] {
+   .formbox input[type=checkbox] {
     visibility: hidden;
+     /* PLEASE MUEEZ ALWAYS USE GENERIC SELECTORS SO AS TO AVOID DISRUPTING OTHER STYLES AND TAGS. I HAD TO INCLUDE ( .formbox )
+   HERE BECAUSE IT WAS AFFECTING ANOTHER CHECKBOX THAT SOMEONE ELSE WORKED ON BUT IF YOU USE GENERIC SELECTION, THE STYLING
+   WILL BE SPECIFIC AND WILL NOT DISTURB ANOTHER STYLE SOMEWHERE. PLEASE ALWAYS USE GENERIC SELECTORS, THANKS. */
   }
 
    /* Create a custom checkbox */
@@ -117,7 +120,7 @@
   .formbtn {
     width: 330px;
     height: 60px;
-    background-color: #E50914;
+    background-color: #e50914;;
     border-radius: 4px;
     color: white;
     border: none;

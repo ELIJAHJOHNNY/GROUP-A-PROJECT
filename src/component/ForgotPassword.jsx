@@ -2,12 +2,12 @@ import React  from "react";
 import PhoneInput from "react-phone-number-input";
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom'
-import './ForgotPassword.css';
+import '../styles/ForgotPassword.css';
 import 'react-phone-number-input/style.css';
 import { useEffect } from "react";
 import { useState } from "react";
-import logo from '../logo.png';
-import { Helmet } from "react-helmet";
+import logo from '../images/logo.png';
+// import { Helmet } from "react-helmet";
 
 const ForgotPassword = () => {
    const [display, setDisplay] = useState('');
@@ -57,7 +57,7 @@ return (
   <body> 
   <div className="fullbody">
       <div className="header headerbox">
-          <img className="header-item header-item1" src={logo} alt="" />
+          <img className="header-item header-item1" src={logo} alt="netflix logo" />
           <h2 className="header-item header-item2" onClick={() => navigate('SignUp')}>Sign In</h2>
       </div>
       <form className="content">
@@ -88,18 +88,19 @@ return (
                     <div className="ftr">
                         <div>
                             <a onClick={() => navigate("/faq")}>FAQ</a><br /><br />
-                            <a href="#">Cookie Prefrences</a>
+                            <a href="/Home">Cookie Prefrences</a>
                         </div>
                         <div>
                             <a onClick={() => navigate("/help")}>Help Center</a><br /><br />
-                            <a href="#">Corperate Information</a>
+                            <a href="/Home">Corperate Information</a>
                         </div>
                         <div>
-                            <a href="#">Terms of Use</a>
+                            <a href="/Home">Terms of Use</a>
                         </div>
                         <div>
-                            <a href="#">Privacy</a>
+                            <a href="/Home">Privacy</a>
                         </div>
+                        {/* ignore the hrefs for now */}
                     </div>
                     </div>
                   </div>

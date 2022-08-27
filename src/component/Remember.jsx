@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import logo from '../logo.png'
-import './Remember.css'
+import logo from '../images/logo.png';
+import '../styles/Remember.css';
 
 const Remember = () => {
     
