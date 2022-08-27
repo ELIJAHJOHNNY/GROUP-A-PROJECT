@@ -11,6 +11,7 @@ import User from './component/User';
 import SharedLayout from './component/SharedLayout';
 import { Route, Routes } from 'react-router-dom';
 import Login from './component/Login';
+// import Footer from './component/Footer';
 // import Forgot from './component/Forgot';
 
 
@@ -35,6 +36,7 @@ function App() {
           {/* <Route path='/Forgot' element={<Forgot/>} /> */} 
         </Route>
       </Routes>
+      {/* <Footer/> */}
     </div>
   );
 }

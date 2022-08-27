@@ -1,4 +1,5 @@
 import '../styles/Login.css';
+import Footer from './Footer';
 
 function Login() {
   return (
@@ -43,7 +44,7 @@ function Login() {
            
         </div>
     </body>
-
+     <Footer/>
     </div>
   );
 }
