@@ -34,12 +34,12 @@ function App() {
   return (
     <div>
       <ThemeProvider theme={theme}>
-      <div>
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-        </Routes>
-      </div>
-    </ThemeProvider>   
+        <div>
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+          </Routes>
+        </div>
+      </ThemeProvider>   
     </div>
   );
 }

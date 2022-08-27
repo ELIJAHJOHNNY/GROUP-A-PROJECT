@@ -32,7 +32,7 @@ const Homepage = () => {
           src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`}
           alt={movie?.title}
         />
-        <div className="absolute xs:top-[8%] xs:w-[60%] left-[2%] sm:top-[15%] md:top-[20%] lg:top-[35%] xl:top-[30%]">
+        <div className="absolute xs:top-[8%] xs:w-[60%] sm:w-[40%] left-[2%] sm:top-[15%] md:top-[20%] lg:top-[35%] xl:top-[30%]">
           <h3 className="font-perm text-[15px] sm:text-[30px] md:text-[35px] lg:text-[40px] xl:text-[55px] pb-5">
             {movie?.title}
           </h3>
@@ -42,7 +42,7 @@ const Homepage = () => {
           <Button
             color="primary"
             variant="contained"
-            startIcon={<PlayArrowIcon />}
+            startIcon={<PlayArrowIcon sx={{ color: "#000000" }} />}
             sx={{
               mt: {
                 xs: "10px",
