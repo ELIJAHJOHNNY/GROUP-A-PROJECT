@@ -11,10 +11,11 @@ const Main = () => {
       setMovies(response.data.results);
     });
   }, []);
-  console.log(movie);
+  // console.log(movie);
 
   return (
-    <div className="w-full h-[650px] text-white">
+    <div className="w-full h-[100vh] text-white">
+    {/* <div className="w-full h-[650px] text-white"> */}
       <div className="w-full h-full flex items-center justify-center">
         <div className="w-full h-[650px] bg-gradient-to-r from-black absolute"></div>
         <img
@@ -33,12 +34,13 @@ const Main = () => {
               Ready to watch? Enter your email to create or restart your
               membership.
             </p>
-            <div className="my-3">
+            <div className="my-3 flex items-center">
               <input
                 className="w-[75%] h-[55px] pl-4 bg-white"
                 placeholder="Email Address"
-              ></input>
-              <button className="bg-red-600 px-6 py-4 cursor-pointer text-white">
+                required
+              />
+              <button className="bg-red-600 px-6 py-1 cursor-pointer text-white">
                 Get Started
               </button>
             </div>

@@ -5,6 +5,7 @@ import Button from "@mui/material/Button";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import MoviePage from "./MoviePage";
+import Navs from './Navs';
 
 const Homepage = () => {
   const [movies, setMovies] = useState([]);
@@ -24,11 +25,15 @@ const Homepage = () => {
   };
 
   return (
-    <div className="w-full lg:h-[550px] sm:h-[300px] md:h-[400px]  text-white">
+    <div className="w-full h-[100vh]  text-white">
+    {/* <div className="w-full lg:h-[550px] sm:h-[300px] md:h-[400px]  text-white"> */}
       <div className="w-full h-full">
+        {/* <div className="w-full lg:h-[550px] md:h-[400px] sm:h-[300px] absolute"></div> */}
         <div className="w-full lg:h-[550px] md:h-[400px] sm:h-[300px] bg-gradient-to-r from-black absolute"></div>
+        <Navs/>
         <img
-          className="w-full h-full  object-cover"
+          className="w-full h-[100vh]  object-cover"
+          // className="w-full h-full  object-cover"
           src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`}
           alt={movie?.title}
         />

@@ -1,12 +1,12 @@
 import React from "react";
 import "../styles/SharedStyle.css";
-// import Navs from './Navs';
+import Navs from './Navs';
 import { Outlet } from "react-router-dom";
 
 const SharedLayout = () => {
   return (
     <div className="shared-container">
-      {/* <Navs/> */}
+      <Navs/>
       <section>
         <Outlet />
       </section>
