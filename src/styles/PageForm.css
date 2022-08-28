@@ -1,22 +1,23 @@
-.formhead {
+.pageformhead {
     height: 90px;
     border-bottom: 1px solid rgb(199, 188, 188);
   }
    
-   .formhead-item {
+   .pageformhead-item {
      display: inline-block;
      color: #e50914;;
   }
    
-   .formhead-item1 {
+   .pageformhead-item1 {
        width: 200px;
        height: 110px;
        margin-left: 3em;
        margin-top: -15px;
        
+       
    }
    
-   .formhead-item2 {
+   .pageformhead-item2 {
      font-weight: 700;
      font-size: 1.2em;
      float: right;
@@ -27,39 +28,55 @@
    }
    
 
-  .formbox {
+  .pageformbox1 {
     background-color: white;
     width: 440px;
     padding: 40px;
     margin: 0 auto ;
+    color: #000;
   }
 
-  .forminput {
-    width: 330px;
+  .pageforminputs {
+    width: 380px;
     height: 60px;
     border-radius: 2px;
     margin-bottom: 20px;
+    background-color: transparent;
+    border: 1px solid gray;
+    padding: 10px;
   }
   
-  .formh1 {
+  .pageform1 {
     margin-bottom: 10px;
+    color: #000;
+    font-weight: 800;
+    font-size: 25px;
+    display: inline-block;
+    line-height: 35px;
   }
 
- .formh3 {
+ .pageform2 {
     margin-bottom: 15px;
     font-weight: 400;
+    color: #000;
+  }
+
+  .pageform3 {
+    color: #000;
   }
 
   .box {
     position: relative;
     padding-left: 30px;
     margin-bottom: 15px;
-    font-size: 16px;
+    font-size: 14px;
+    margin-left: 1px;
+    font-weight: 500;
     
   }
 
    /* Hide the default style of the checkbox */
-   .formbox input[type=checkbox] {
+   .pageformcheckbox {
     visibility: hidden;
      /* PLEASE MUEEZ ALWAYS USE GENERIC SELECTORS SO AS TO AVOID DISRUPTING OTHER STYLES AND TAGS. I HAD TO INCLUDE ( .formbox )
    HERE BECAUSE IT WAS AFFECTING ANOTHER CHECKBOX THAT SOMEONE ELSE WORKED ON BUT IF YOU USE GENERIC SELECTION, THE STYLING
@@ -107,8 +124,8 @@
       .box .mark:after {
         left: 8px;
         bottom: 5px;
-        width: 6px;
-        height: 12px;
+        width: 8px;
+        height: 14px;
         border: solid blue;
         border-width: 0 4px 4px 0;
         -webkit-transform: rotate(45deg);
@@ -118,7 +135,7 @@
       }
 
   .formbtn {
-    width: 330px;
+    width: 380px;
     height: 60px;
     background-color: #e50914;;
     border-radius: 4px;
@@ -127,42 +144,44 @@
     font-size: 24px;
     font-weight: 500;
     margin-top: 50px;
+    padding: 10px;
   }
 
-  .footer4 {
+  .footerpageform1 {
     z-index: 2;
     width: 100%;
-    margin-top: 25vh;
+    margin-top: 89vh;
     color: #737373;
     background-color: rgb(239, 239, 239);
   }
 
-  .ftr4-box {
+  .footerpageform-box {
     display: grid;
     width: 80%;
     margin: 0 auto;
     padding-top: 36px;
     font-size: 1em;
     padding-bottom: 36px;
+    
   }
 
-  .ftr4-box a {
+  .footerpageform-box a {
     color: #999;
   }
   
-  .ftr4-box a:hover {
+  .footerpageform-box a:hover {
     text-decoration: underline;
   }
 
-  .contact4 {
+  .pageformcontact {
     margin-bottom: 30px;
   }
   
-  .contact4 a:hover {
+  .pageformcontact a:hover {
     text-decoration: underline;
   }
 
-  .ftr4 {
+  .footerpage4 {
     margin-bottom: 30px;
     font-size:0.9rem;
     display: grid;
@@ -170,7 +189,7 @@
   }
 
   @media(max-width:750px){
-    .ftr4{
+    .footerpage4{
       grid-template-columns: 1fr 1fr 1fr;
       gap: 15px;
     }
@@ -182,10 +201,10 @@
     border-bottom: 1px solid #999;
     height: 75px;
    }
-   .ftr4-box {
+   .footerpageform-box {
     margin-top: 20px;
 }
-   .footer4 {
+   .footerpageform {
     background-color: #737373;
    }
   
@@ -197,10 +216,10 @@
    .formhead {
     height: 75px;
    }
-   .ftr4-box {
+   .footerpageform-box {
     margin-top: 20px;
 }
-   .footer4 {
+   .footerpageform {
     background-color: #737373;
    
    }
