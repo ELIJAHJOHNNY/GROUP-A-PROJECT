@@ -1,0 +1,249 @@
+.pageformhead {
+    height: 90px;
+    border-bottom: 1px solid rgb(199, 188, 188);
+  }
+   
+   .pageformhead-item {
+     display: inline-block;
+     color: #e50914;;
+  }
+   
+   .pageformhead-item1 {
+       width: 200px;
+       height: 110px;
+       margin-left: 3em;
+       margin-top: -15px;
+       
+       
+   }
+   
+   .pageformhead-item2 {
+     font-weight: 700;
+     font-size: 1.2em;
+     float: right;
+     margin-top: 30px;
+     margin-right: 3em;
+     color: #000;
+     
+   }
+   
+
+  .pageformbox1 {
+    background-color: white;
+    width: 440px;
+    padding: 40px;
+    margin: 0 auto ;
+    color: #000;
+  }
+
+  .pageforminputs {
+    width: 380px;
+    height: 60px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 1px solid gray;
+    padding: 10px;
+  }
+  
+  .pageform1 {
+    margin-bottom: 10px;
+    color: #000;
+    font-weight: 800;
+    font-size: 25px;
+    display: inline-block;
+    line-height: 35px;
+  }
+
+ .pageform2 {
+    margin-bottom: 15px;
+    font-weight: 400;
+    color: #000;
+  }
+
+  .pageform3 {
+    color: #000;
+  }
+
+  .box {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    margin-left: 1px;
+    font-weight: 500;
+    
+  }
+
+   /* Hide the default style of the checkbox */
+   .pageformcheckbox {
+    visibility: hidden;
+     /* PLEASE MUEEZ ALWAYS USE GENERIC SELECTORS SO AS TO AVOID DISRUPTING OTHER STYLES AND TAGS. I HAD TO INCLUDE ( .formbox )
+   HERE BECAUSE IT WAS AFFECTING ANOTHER CHECKBOX THAT SOMEONE ELSE WORKED ON BUT IF YOU USE GENERIC SELECTION, THE STYLING
+   WILL BE SPECIFIC AND WILL NOT DISTURB ANOTHER STYLE SOMEWHERE. PLEASE ALWAYS USE GENERIC SELECTORS, THANKS. */
+  }
+
+   /* Create a custom checkbox */
+   .mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border: 1px solid black;
+  }
+
+   /* Specify the background color for the checkbox when the checkbox is active */
+   .box input:active + .mark {
+    background-color: white;
+  }
+
+   /* Specify the background color for the checkbox when it is checked */
+   .box input:checked + .mark {
+    background-color: white;
+  }
+
+   /* Checkmark to be shown in checkbox */
+      /* It will not be shown when not checked */
+      .mark:after {
+        content: "";
+        position: absolute;
+        display: none;
+        
+  }
+
+   /* Display checkmark when checked */
+   .box input:checked + .mark:after {
+    display: block;
+    
+  }
+
+   /* Styling the checkmark using webkit */
+      /* Rotated the rectangle by 45 degree and showing only two border to make it look like a tick mark */
+      .box .mark:after {
+        left: 8px;
+        bottom: 5px;
+        width: 8px;
+        height: 14px;
+        border: solid blue;
+        border-width: 0 4px 4px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        
+      }
+
+  .formbtn {
+    width: 380px;
+    height: 60px;
+    background-color: #e50914;;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 50px;
+    padding: 10px;
+  }
+
+  .footerpageform1 {
+    z-index: 2;
+    width: 100%;
+    margin-top: 89vh;
+    color: #737373;
+    background-color: rgb(239, 239, 239);
+  }
+
+  .footerpageform-box {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 36px;
+    font-size: 1em;
+    padding-bottom: 36px;
+    
+  }
+
+  .footerpageform-box a {
+    color: #999;
+  }
+  
+  .footerpageform-box a:hover {
+    text-decoration: underline;
+  }
+
+  .pageformcontact {
+    margin-bottom: 30px;
+  }
+  
+  .pageformcontact a:hover {
+    text-decoration: underline;
+  }
+
+  .footerpage4 {
+    margin-bottom: 30px;
+    font-size:0.9rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  @media(max-width:750px){
+    .footerpage4{
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 15px;
+    }
+  }
+
+@media screen and (max-width: 750px) {
+   
+   .formhead {
+    border-bottom: 1px solid #999;
+    height: 75px;
+   }
+   .footerpageform-box {
+    margin-top: 20px;
+}
+   .footerpageform {
+    background-color: #737373;
+   }
+  
+
+}
+
+@media screen and (max-width: 400px), screen and (orientation: landscape)  {
+ 
+   .formhead {
+    height: 75px;
+   }
+   .footerpageform-box {
+    margin-top: 20px;
+}
+   .footerpageform {
+    background-color: #737373;
+   
+   }
+   
+}
+
+@media screen and (max-width: 440px) {
+  .formhead-item1 {
+    margin-top: 15px; 
+    width: 80px;
+    height: 55px;
+    margin-left: 5px;
+  }
+  .formhead-item2 {
+    font-weight: 700;
+    font-size: 1em;
+    float: right;
+    margin-top: 30px;
+    margin-right: 1em;
+  }
+}
+
+
+
+
+
+  
