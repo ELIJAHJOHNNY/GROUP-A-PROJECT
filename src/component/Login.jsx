@@ -1,6 +1,4 @@
 import '../styles/Login.css';
-import { useNavigate } from "react-router-dom";
-
 function Login() {
     const navigate = useNavigate();
     function getStarted(e){
@@ -48,7 +46,7 @@ function Login() {
            
         </div>
     </body>
-
+     <Footer/>
     </div>
   );
 }
