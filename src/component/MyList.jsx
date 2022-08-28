@@ -6,7 +6,7 @@ const MyList = () => {
   return (
     <div>
       <Navs/>
-        <h1>My Favs</h1>
+        <h1 className='header-content'>My Favs</h1>
         <UserPage/>
     </div>
   )

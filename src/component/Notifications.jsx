@@ -5,7 +5,7 @@ const Notifications = () => {
   return (
     <div>
       <Navs/>
-        <h1>Notifications</h1>
+        <h1 className='header-content'>Notifications</h1>
     </div>
   )
 }

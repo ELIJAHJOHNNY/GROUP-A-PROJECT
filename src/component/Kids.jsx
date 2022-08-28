@@ -5,7 +5,7 @@ const Kids = () => {
   return (
     <div>
       <Navs/>
-        <h1>Kids</h1>
+        <h1 className='header-content'>Movies for kids</h1>
     </div>
   )
 }
