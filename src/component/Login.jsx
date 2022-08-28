@@ -1,43 +1,45 @@
 import '../styles/Login.css';
-import Footer from './Footer';
-
 function Login() {
+    const navigate = useNavigate();
+    function getStarted(e){
+        e.preventDefault();
+        navigate('/Home')
+    }
+
   return (
     <div className="App">
-    <head>
-       
-        <title>Netflix SignIn Page Clone</title>
-    </head>
+    {/* <head>
+        <title>Netflix SignIn Page</title>
+    </head> */}
     <body>
-        <div class="login-container">
-            <div class="form-container">
-                <form>
+        <div className="login-container">
+            <div className="form-container">
+                <form onSubmit={getStarted}>
                     <h1>Sign In</h1>
-                    <div class="form-group">
-                        <input type="text" required></input>
-                        <label>Email or phone number</label>
+                    <div className="form-group">
+                        <input type="text" name='text' required/>
+                        <label htmlFor='text'>Email or phone number</label>
                     </div>
-                    <div class="form-group">
-                        <input type="password" required></input>
-                        <label>Password</label>
+                    <div className="form-group">
+                        <input type="password" name='password' required/>
+                        <label htmlFor='password'>Password</label>
                     </div>
                     <button>Sign In</button>
-                    <div class="remember">
-                        <div class="left">
+                    <div className="remember">
+                        <div className="left">
                            <input type="checkbox" id="remember"/>
-                            <label for="remember"> Remember Me</label>
+                            <label htmlFor="remember">Remember Me</label>
                         </div>
-                        <div class="right">
-                            <a href="/Home">Need help?</a>
+                        <div className="right">
+                            <a href="/ForgotPassword">Need help?</a>
                         </div>
                     </div>
-                    <div class="signup">
-                        <p>New to Netflix? <a href="/Home">Sign up now</a>.</p>
+                    <div className="signup">
+                        <p>New to Netflix? <a href="/PageForm">Sign up now</a>.</p>
                     </div>
-                    <p class="captcha">
+                    <p className="captcha">
                         This page is protected by Google reCAPTCHA to ensure you're not a bot. 
-                        <a href="/Home">Learn more</a>. 
-                        {/* Ignore the hrefs for now */}
+                        <a href="https://www.netflix.com" target='_blank'> Learn more </a>
                     </p>
                 </form>
             </div>

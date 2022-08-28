@@ -1,17 +1,17 @@
-import React from 'react';
-import '../styles/SharedStyle.css'
-// import Navs from './Navs';
-import { Outlet } from 'react-router-dom'
+import React from "react";
+import "../styles/SharedStyle.css";
+import Navs from './Navs';
+import { Outlet } from "react-router-dom";
 
 const SharedLayout = () => {
   return (
-    <div className='shared-container'>
-      {/* <Navs/> */}
+    <div className="shared-container">
+      <Navs/>
       <section>
-        <Outlet/>
+        <Outlet />
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default SharedLayout
+export default SharedLayout;
