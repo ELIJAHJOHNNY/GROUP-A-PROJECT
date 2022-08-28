@@ -11,6 +11,7 @@ const UserPage = () => {
         rowId="1"
         title="Top Rated"
         fetchUrl={requests.requestTopRated}
+        className="z-50"
       />
       <MoviePage
         rowId="2"
