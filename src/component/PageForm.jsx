@@ -41,17 +41,17 @@ function PageForm(props) {
                     <div className="ftr4">
                         <div>
                             <a >FAQ</a><br /><br />
-                            <a href="#">Cookie Prefrences</a>
+                            <a href="/Home">Cookie Prefrences</a>
                         </div>
                         <div>
                             <a >Help Center</a><br /><br />
-                            <a href="#">Corperate Information</a>
+                            <a href="/Home">Corperate Information</a>
                         </div>
                         <div>
-                            <a href="#">Terms of Use</a>
+                            <a href="/Home">Terms of Use</a>
                         </div>
                         <div>
-                            <a href="#">Privacy</a>
+                            <a href="/Home">Privacy</a>
                         </div>
                     </div> 
                 </div>

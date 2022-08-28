@@ -6,7 +6,7 @@ import requests from "../Requests";
 const UserPage = () => {
   return (
     <div>
-      <Homepage />
+      {/* <Homepage /> */}
       <MoviePage
         rowId="1"
         title="Top Rated"

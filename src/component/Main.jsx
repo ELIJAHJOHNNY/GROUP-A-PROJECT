@@ -40,7 +40,7 @@ const Main = () => {
                 placeholder="Email Address"
                 required
               />
-              <button className="bg-red-600 px-6 py-1 cursor-pointer text-white">
+              <button className="bg-red-600 px-6 py-4 cursor-pointer text-white">
                 Get Started
               </button>
             </div>

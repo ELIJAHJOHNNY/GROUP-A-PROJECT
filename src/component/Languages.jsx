@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Navs from './Navs';
 
 const Languages = () => {
   return (
     <div>
+      <Navs/>
         <h1>Browse &#38; Languages</h1>
     </div>
   )

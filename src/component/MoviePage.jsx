@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import Movie from "./Movie";
+// import Navs from "./Navs";
 
 const MoviePage = ({ title, fetchUrl, rowId }) => {
   const [movies, setMovies] = useState([]);
@@ -46,6 +47,7 @@ const MoviePage = ({ title, fetchUrl, rowId }) => {
 
   return (
     <div>
+      {/* <Navs/> */}
       <h2 className="text-white pl-5 mt-[15px] pb-1 font-bold sm:text-[14px] lg:text-[16px] xl:text-[18px] sm:pt-[1px] ">
         {title}
       </h2>

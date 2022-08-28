@@ -96,6 +96,11 @@ input {
     font-size: .85rem;
     color: #b3b3b3;
 }
+
+.remember .left #remember{
+    vertical-align: middle;
+}
+
 .remember a {
     color: #b3b3b3;
     font-size: .85rem;
@@ -147,3 +152,5 @@ input {
 .captcha a:hover {
     text-decoration: underline;
 }
+
+

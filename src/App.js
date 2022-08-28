@@ -18,6 +18,7 @@ import { Routes, Route } from "react-router-dom";
 // import Homepage from './component/Homepage';
 import { createTheme, ThemeProvider } from '@mui/material';
 import ForgotPassword from './component/ForgotPassword';
+import PageForm from './component/PageForm';
 
 const theme = createTheme({
   palette :{
@@ -35,10 +36,26 @@ function App() {
   return (
     <div className='overall-container'>
       <ThemeProvider theme={theme}>
-      <div className='path-container'>
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path='/Login' element={<Login/>}/>
+        <div className='path-container'>
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path='/Login' element={<Login/>}/>
+            <Route path='/ForgotPassword' element={<ForgotPassword/>}/>
+            <Route path='/Home' element={<Home/>}/>
+            <Route path='/TVshows' element={<TVshows/>}/>
+            <Route path='/MoviePage' element={<MoviePage/>}/>
+            <Route path='/News' element={<News/>}/>
+            <Route path='/MyList' element={<MyList/>}/>
+            <Route path='/Kids' element={<Kids/>}/>
+            <Route path='/Languages' element={<Languages/>}/>
+            <Route path='/Error' element={<Error/>}/>
+            <Route path='/Notifications' element={<Notifications/>}/>
+            <Route path='/User' element={<User/>}/>
+            <Route path='/PageForm' element={<PageForm/>}/>
+            <Route path='/SharedLayout' element={<SharedLayout/>}/>
+          </Routes>
+        </div>
+      </ThemeProvider>
     </div>
   );
 }

@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Navs from './Navs';
+import UserPage from '../pages/UserPage';
 
 const MyList = () => {
   return (
     <div>
-        <h1>MyList</h1>
+      <Navs/>
+        <h1>My Favs</h1>
+        <UserPage/>
     </div>
   )
 }

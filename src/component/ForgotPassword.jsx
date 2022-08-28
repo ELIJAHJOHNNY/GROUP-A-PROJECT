@@ -14,9 +14,9 @@ const ForgotPassword = () => {
    const [value, setValue] = useState();
 
    const navigate = useNavigate();
-   function Next() {
-     navigate('/Help')
-   }
+//    function Next() {
+//      navigate('/Help')
+//    }
 
   function handleEmailDisplay(){
       setDisplay(
@@ -64,7 +64,7 @@ return (
           <h1 className="top-content">Forgot Email/Password</h1>
           <p>How would you like to reset your password?</p>
           <div className="inputs">
-          <input type="radio" onClick={handleEmailDisplay} name="forgotPassword" className="radio"  required/> 
+          <input type="radio" onClick={handleEmailDisplay} name="forgotPassword" className="radio" defaultChecked required/> 
           <label>Email</label><br></br> 
           <div></div>
           </div>
@@ -82,8 +82,7 @@ return (
         <div className='signupFooter footer' style={{height:"270px"}}>
                 <div className="ftr-content ftr-content1">
                     <div className="contact">
-                        <a>Questions? <a href="tel:000-800-040-1843">Contact us
-                        </a></a>
+                        <span>Questions?</span> <a href="tel:000-800-040-1843">Contact us</a>
                     </div>
                     <div className="ftr">
                         <div>

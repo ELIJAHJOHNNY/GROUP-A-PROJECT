@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../images/logo.svg";
+import navlogo from "../images/navlogo.svg";
 import { useNavigate } from "react-router-dom";
 
 const NavbarLP = () => {
@@ -14,7 +14,7 @@ const NavbarLP = () => {
       <Link to="/">
         <img
           id="image1"
-          src={logo}
+          src={navlogo}
           alt="NETFLIX"
           className="h-[50px] w-[60%]"
         />
