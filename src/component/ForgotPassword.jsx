@@ -14,14 +14,14 @@ const ForgotPassword = () => {
     const [value, setValue] = useState();
 
     const navigate = useNavigate();
-    function Next() {
+    function Nextpage() {
         navigate('/Help')
     }
 
     function handleEmailDisplay() {
         setDisplay(
             <div className="fdiv">
-                <p className="ptexts">We will send you an email with instructions on how to reset your password.</p>
+                <p className="pageformtexts">We will send you an email with instructions on how to reset your password.</p>
                 <input type='email' id='emailTexts' placeholder='name@example.com' required /><br />
                 <button className="btns">Email Me</button>
             </div>
@@ -31,7 +31,7 @@ const ForgotPassword = () => {
     function handleTextDisplay() {
         setDisplay(
             <div className="fdiv">
-                <p className="ptexts">We will text you a verification code to reset your password. Message and data rates may apply.</p>
+                <p className="pageformtexts">We will text you a verification code to reset your password. Message and data rates may apply.</p>
                 <div className="PhoneInput">
                     <PhoneInput
                         placeholder=""
@@ -54,7 +54,7 @@ const ForgotPassword = () => {
 
 
     return (
-        <body>
+        <section>
             <div className="fullbody fdiv">
                 <div className="header headerbox fdiv">
                     <img className="header-item header-item1" src={logo} alt="netflix logo" />
@@ -62,7 +62,7 @@ const ForgotPassword = () => {
                 </div>
                 <form className="content">
                     <h1 className="top-content">Forgot Email/Password</h1>
-                    <p className="ptexts">How would you like to reset your password?</p>
+                    <p className="pageformtexts">How would you like to reset your password?</p>
                     <div className="inputs fdiv">
                         <input type="radio" onClick={handleEmailDisplay} name="forgotPassword" className="radio" required />
                         <label>Email</label><br></br>
@@ -73,15 +73,15 @@ const ForgotPassword = () => {
                         <label>Text Message(SMS)</label>
                         <div></div>
                     </div>
-                    <div className="fdiv"> { displays }  </div>
+                    <div className="fdiv"> {displays}  </div>
                     <p><Link to='/Help' className="linktext">I don't remember my email or Phone</Link></p>
                 </form>
                 <div className="recaptchatexts">
-                    <h1 className="ptext retexts">This page is Protected by Google reCAPTCHA to ensure you're
-                    not a bot.<a href="#">Learn more</a></h1>
+                    <h1 className="pageformtext retexts">This page is Protected by Google reCAPTCHA to ensure you're
+                        not a bot.<a href="#">Learn more</a></h1>
                 </div>
             </div>
-        </body>
+        </section>
 
     )
 }
