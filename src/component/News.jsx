@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Navs from './Navs';
 
 const News = () => {
   return (
     <div>
-        <h1>News &#38; Popular</h1>
+      <Navs/>
+        <h1 className='header-content'>New &#38; Popular Movies</h1>
     </div>
   )
 }

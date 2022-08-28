@@ -1,10 +1,12 @@
 import React from 'react';
 import UserPage from '../pages/UserPage';
+import Homepage from './Homepage';
 
 const User = () => {
   return (
     <div>
-        <UserPage/>
+      <Homepage/>
+      <UserPage/>
     </div>
   )
 }

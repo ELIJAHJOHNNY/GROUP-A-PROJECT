@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Navs from './Navs';
 
 const Notifications = () => {
   return (
     <div>
-        <h1>Notifications</h1>
+      <Navs/>
+        <h1 className='header-content'>Notifications</h1>
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import '../styles/Login.css';
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
+import Footer from './Footer';
 
 function Login() {
     const navigate = useNavigate();
@@ -13,6 +14,7 @@ function Login() {
     {/* <head>
         <title>Netflix SignIn Page</title>
     </head> */}
+
     <body>
         <div className="login-container">
             <div className="form-container">
@@ -30,7 +32,7 @@ function Login() {
                     <div className="remember">
                         <div className="left">
                            <input type="checkbox" id="remember"/>
-                            <label htmlFor="remember">Remember Me</label>
+                            <label htmlFor="remember"> Remember Me</label>
                         </div>
                         <div className="right">
                             <a href="/ForgotPassword">Need help?</a>
@@ -48,7 +50,7 @@ function Login() {
            
         </div>
     </body>
-
+     <Footer/>
     </div>
   );
 }

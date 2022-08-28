@@ -13,10 +13,12 @@ const ForgotPassword = () => {
     const [displays, setDisplay] = useState('');
     const [value, setValue] = useState();
 
+
     const navigate = useNavigate();
     function Nextpage() {
         navigate('/Help')
     }
+
 
     function handleEmailDisplay() {
         setDisplay(
@@ -53,6 +55,7 @@ const ForgotPassword = () => {
     }, [])
 
 
+
     return (
         <section>
             <div className="fullbody fdiv">
@@ -67,6 +70,8 @@ const ForgotPassword = () => {
                         <input type="radio" onClick={handleEmailDisplay} name="forgotPassword" className="radio" required />
                         <label>Email</label><br></br>
                         <div></div>
+
+
                     </div>
                     <div className="inputs fdiv">
                         <input type="radio" onClick={handleTextDisplay} name="forgotPassword" className="radio" required />

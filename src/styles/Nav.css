@@ -4,29 +4,33 @@
     margin: 0;
 }
 
+
 .nav-container{
     display: flex;
-    flex-direction: column;
-    color: red !important;
+    height: 10vh;
     padding: 0.5rem 1.5rem;
-    position: relative;
-    z-index: 1;
-    border: 1px solid;
+    /* border: 1px solid; */
+    color: black;
 }
 
-.nav-container .logo{
-    flex: 0.1;
+.nav-container .nav-logo{
+    /* border: 1px solid; */
+    flex: 0.15;
+    align-self: center;
+    justify-items: center;
 }
 
-.nav-container .logo #image1{
-    width: 100px;
+.nav-container .nav-logo #img{
+    width: 150px;
+    /* vertical-align: middle; */
 }
 
 .nav-container .navlinks{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
-    flex: 0.8;
+    flex: 1;
+    /* border: 1px solid; */
 }
 
 .nav-container .navlinks .nav1{
@@ -37,6 +41,7 @@
 .nav-container .navlinks .nav2{
     flex: 0.12;
     justify-content: space-between;
+    /* border: 1px solid; */
 }
 
 .nav-container .navlinks .nav1,
@@ -53,7 +58,6 @@
 .nav-container .navlinks .nav1 a,
 .nav-container .navlinks .nav2 a{
     text-decoration: none;
-    color: white;
     font-weight: 600;
     transition: opacity 0.4s;
 }
@@ -63,7 +67,7 @@
     opacity: 0.7;
 }
 
-.nav-container .logo p{
+.nav-container .nav-logo p{
     display: none;
 }
 
@@ -74,19 +78,21 @@
         display: none;
     }
 
-    .nav-container .logo{
+    .nav-container .nav-logo{
         display: flex;
         align-items: center;
         flex: 3.5;
+        position: relative;
+        z-index: 11;
         /* border: 1px solid; */
     }
 
-    .nav-container .logo p #chevron{
+    .nav-container .nav-logo p #chevron{
          vertical-align: middle;
          margin-left:3px;
     }
 
-    .nav-container .logo p{
+    .nav-container .nav-logo p{
         margin-left: 1rem;
         display: block;
         cursor: pointer;

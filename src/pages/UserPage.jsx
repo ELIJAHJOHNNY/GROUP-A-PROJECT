@@ -1,12 +1,12 @@
 import React from "react";
-import Homepage from "../component/Homepage";
+// import Homepage from "../component/Homepage";
 import MoviePage from "../component/MoviePage";
 import requests from "../Requests";
 
 const UserPage = () => {
   return (
     <div>
-      <Homepage />
+      {/* <Homepage /> */}
       <MoviePage
         rowId="1"
         title="Top Rated"
