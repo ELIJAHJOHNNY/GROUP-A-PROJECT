@@ -17,7 +17,11 @@ const UserPage = () => {
         title="Upcoming"
         fetchUrl={requests.requestUpcoming}
       />
-      <MoviePage rowId="3" title="Popular" fetchUrl={requests.requestPopular} />
+      <MoviePage 
+        rowId="3" 
+        title="Popular" 
+        fetchUrl={requests.requestPopular} 
+      />
     </div>
   );
 };

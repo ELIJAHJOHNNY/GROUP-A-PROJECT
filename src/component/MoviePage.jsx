@@ -13,7 +13,7 @@ const MoviePage = ({ title, fetchUrl, rowId }) => {
       setMovies(response.data.results);
     });
   }, [fetchUrl]);
-  console.log(movies);
+  // console.log(movies);
 
   const prevSlide = () => {
     const slider = document.getElementById("slider" + rowId);

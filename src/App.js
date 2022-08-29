@@ -10,6 +10,8 @@ import Notifications from './component/Notifications';
 import User from './component/User';
 import SharedLayout from './component/SharedLayout';
 import Login from './component/Login';
+import Remember from './component/Remember';
+import AllMovies from './component/AllMovies';
 // import Forgot from './component/Forgot';
 import './App.css';
 import LandingPage from './pages/LandingPage';
@@ -52,6 +54,8 @@ function App() {
             <Route path='/Notifications' element={<Notifications/>}/>
             <Route path='/User' element={<User/>}/>
             <Route path='/PageForm' element={<PageForm/>}/>
+            <Route path='/Remember' element={<Remember/>}/>
+            <Route path='/AllMovies' element={<AllMovies/>}/>
             <Route path='/SharedLayout' element={<SharedLayout/>}/>
           </Routes>
         </div>

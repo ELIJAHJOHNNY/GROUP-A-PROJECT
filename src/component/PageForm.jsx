@@ -1,17 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from '../images/logo.png';
 import '../styles/PageForm.css';
-import { useState } from "react";
+// import { useState } from "react";
 
 function PageForm(props) {
         
-
     return (
         <>
           <div>
            <div className="pageformhead">
-              <img className="pageformhead-item pageformhead-item1" src={logo} alt="logo" />
-              {/* <h2 className="formhead-item formhead-item2">Sign In</h2> */}
+            <Link to='/'> <img className="pageformhead-item pageformhead-item1" src={logo} alt="logo" /> </Link>
               <div className="pageformhead-item pageformhead-item2">
                 <a href="/Login">Sign In</a>
               </div>

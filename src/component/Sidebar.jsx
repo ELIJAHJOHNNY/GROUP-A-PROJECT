@@ -20,9 +20,9 @@ const Sidebar = () => {
       <ul onClick={removeNav} onMouseLeave={removeNav} className={`nav1 ${isHamActive ? "show-nav1" : ""}`}>
           <li><Link to='/Home'>Home</Link></li>
           <li><Link to='/TVshows'>TV Shows</Link></li>
-          <li><Link to='/Movies'>Movies</Link></li>
-          <li><Link to='/New'>New &#38; Popular</Link></li>
-          <li><Link to='/List'>My List</Link></li>
+          <li><Link to='/MoviePage'>Movies</Link></li>
+          <li><Link to='/News'>New &#38; Popular</Link></li>
+          <li><Link to='/MyList'>My List</Link></li>
           <li><Link to='/Languages'>Browse by Languages</Link></li>
       </ul>
     </div>
