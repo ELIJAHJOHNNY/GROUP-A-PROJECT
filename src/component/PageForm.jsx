@@ -39,18 +39,22 @@ function PageForm(props) {
                     </div>
                     <div className="footerpage4">
                         <div>
-                            <a >FAQ</a><br /><br />
-                            <a href="/Home">Cookie Prefrences</a>
+                            <Link to='/'>FAQ</Link>
+                            <br />
+                            <br />
+                            <Link to="/">Cookie Prefrences</Link>
                         </div>
                         <div>
-                            <a >Help Center</a><br /><br />
-                            <a href="/Home">Corperate Information</a>
+                            <Link to>Help Center</Link>
+                            <br />
+                            <br />
+                            <Link to="/">Corperate Information</Link>
                         </div>
                         <div>
-                            <a href="/Home">Terms of Use</a>
+                            <Link to="/">Terms of Use</Link>
                         </div>
                         <div>
-                            <a href="/Home">Privacy</a>
+                            <Link to="/">Privacy</Link>
                         </div>
                     </div> 
                 </div>

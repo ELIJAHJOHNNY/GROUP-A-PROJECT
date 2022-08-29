@@ -9,10 +9,11 @@ const AllMovies = () => {
     const URL = 'https://api.themoviedb.org/3/movie/popular?api_key=105719de0ffa4a3d2bc64b5b9612472f&language=en-US';
     
     useEffect(() =>{
-        axios.get(URL).then((res) =>{
+        axios.get(URL)
+        .then((res) => {
             setMovies(res.data.results)
         })
-      }, [])
+      }, [movies])
 
   return (
     <div className='allmovies-container'>
@@ -24,7 +25,7 @@ const AllMovies = () => {
                             <img 
                                 src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`} 
                                 alt={movie.title}
-                                className='w-full h-full'
+                                className=''
                             />
                             <p>{movie.title}</p>
                     </div>
