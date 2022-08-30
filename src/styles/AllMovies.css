@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.allmovies-container .major-movie-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px solid;
+
+}
+
+.allmovies-container .major-movie-container .each-movie{
+    /* margin: 0 10px; */
+}
+
+.allmovies-container .major-movie-container .each-movie .img{
+    /* width: 500px; */
+    height: auto;
+}
