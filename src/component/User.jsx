@@ -1,12 +1,15 @@
 import React from 'react';
-import UserPage from '../pages/UserPage';
-import Homepage from './Homepage';
+// import UserPage from '../pages/UserPage';
+// import Homepage from './Homepage';
+import Navs from './Navs';
 
 const User = () => {
+  
   return (
     <div>
-      <Homepage/>
-      <UserPage/>
+      <Navs/>
+      {/* <Homepage/> */}
+      {/* <UserPage/> */}
     </div>
   )
 }

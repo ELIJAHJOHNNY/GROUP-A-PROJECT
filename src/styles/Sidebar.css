@@ -6,8 +6,9 @@
 
 .sidebar-container .nav1{
     position: absolute;
-    background: rgb(143, 8, 8);
-    top: 70px;
+    z-index: 1;
+    background-color: #333;;
+    top: 67px;
     left: 15%;
     padding: 2em 1.5em;
     cursor: pointer;

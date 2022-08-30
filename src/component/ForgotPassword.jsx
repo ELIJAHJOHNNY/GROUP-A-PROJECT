@@ -42,7 +42,6 @@ const ForgotPassword = () => {
                         id='inputfone'
                         defaultCountry='NG'
                         required
-
                     />
                 </div>
                 <button className="btns">Text Me</button>
@@ -60,14 +59,15 @@ const ForgotPassword = () => {
         <section>
             <div className="fullbody fdiv">
                 <div className="header headerbox fdiv">
-                    <img className="header-item header-item1" src={logo} alt="netflix logo" />
-                    <h2 className="header-item header-item2" onClick={() => navigate('SignUp')}>Sign In</h2>
+                    <Link to="/"> <img className="header-item header-item1" src={logo} alt="netflix logo" /> </Link>                  
+                    <Link to="/Login"> <h2 className="header-item header-item2">Sign In</h2> </Link>                  
+                    
                 </div>
                 <form className="content">
                     <h1 className="top-content">Forgot Email/Password</h1>
                     <p className="pageformtexts">How would you like to reset your password?</p>
                     <div className="inputs fdiv">
-                        <input type="radio" onClick={handleEmailDisplay} name="forgotPassword" className="radio" required />
+                        <input type="radio" onClick={handleEmailDisplay} name="forgotPassword" className="radio" defaultChecked required />
                         <label>Email</label><br></br>
                         <div></div>
 
@@ -79,11 +79,11 @@ const ForgotPassword = () => {
                         <div></div>
                     </div>
                     <div className="fdiv"> {displays}  </div>
-                    <p><Link to='/Help' className="linktext">I don't remember my email or Phone</Link></p>
+                    <p className="param"><Link to='#' className="linktext">I don't remember my email or Phone</Link></p>
                 </form>
                 <div className="recaptchatexts">
                     <h1 className="pageformtext retexts">This page is Protected by Google reCAPTCHA to ensure you're
-                        not a bot.<a href="#">Learn more</a></h1>
+                        not a bot.<a href="https://www.netflix.com"> <span> Learn more</span> </a></h1>
                 </div>
             </div>
         </section>

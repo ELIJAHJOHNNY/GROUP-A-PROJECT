@@ -3,14 +3,22 @@ import '../styles/Nav.css';
 import navlogo from '../images/navlogo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faBell, faUser, faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { handleHamburgerToggle } from '../reduxSlice/hamburgerSlice'
 import Sidebar from './Sidebar';
 
 const Navs = () => {
   const dispatch = useDispatch();
-  
+  const navigate = useNavigate();
+
+  const logOut = () => {
+    if(window.confirm('Logout?')){
+      navigate('/');
+    }else{
+      return
+    }
+  }
 
   return (
     <>
@@ -26,16 +34,18 @@ const Navs = () => {
         <ul className='nav1'>
             <li><Link to='/Home'>Home</Link></li>
             <li><Link to='/TVshows'>TV Shows</Link></li>
-            <li><Link to='/MoviePage'>Movies</Link></li>
+            <li><Link to='/AllMovies'>Movies</Link></li>
+            {/* <li><Link to='/MoviePage'>Movies</Link></li> */}
             <li><Link to='/News'>New &#38; Popular</Link></li>
             <li><Link to='/MyList'>My List</Link></li>
             <li><Link to='/Languages'>Browse by Languages</Link></li>
         </ul>
         <ul className='nav2'>
-            <li><FontAwesomeIcon id='search-icon' icon={faSearch}/></li>
+            <li className='cursor-pointer'><FontAwesomeIcon id='search-icon' icon={faSearch}/></li>
             <li><Link to='/Kids'>Kids</Link></li>
             <li><Link to='/Notifications'><FontAwesomeIcon id='notify' icon={faBell}/></Link></li>
-            <li><Link to='/User'><FontAwesomeIcon id='user' icon={faUser}/></Link></li>
+            <li className='cursor-pointer' onClick={logOut}><FontAwesomeIcon id='user' icon={faUser}/></li>
+            {/* <li><Link to='/User'><FontAwesomeIcon id='user' icon={faUser}/></Link></li> */}
         </ul>
       </div>
     </section>

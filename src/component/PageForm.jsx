@@ -1,17 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from '../images/logo.png';
 import '../styles/PageForm.css';
-import { useState } from "react";
+// import { useState } from "react";
 
 function PageForm(props) {
         
-
     return (
         <>
           <div>
            <div className="pageformhead">
-              <img className="pageformhead-item pageformhead-item1" src={logo} alt="logo" />
-              {/* <h2 className="formhead-item formhead-item2">Sign In</h2> */}
+            <Link to='/'> <img className="pageformhead-item pageformhead-item1" src={logo} alt="logo" /> </Link>
               <div className="pageformhead-item pageformhead-item2">
                 <a href="/Login">Sign In</a>
               </div>
@@ -40,18 +39,22 @@ function PageForm(props) {
                     </div>
                     <div className="footerpage4">
                         <div>
-                            <a >FAQ</a><br /><br />
-                            <a href="/Home">Cookie Prefrences</a>
+                            <Link to='/'>FAQ</Link>
+                            <br />
+                            <br />
+                            <Link to="/">Cookie Prefrences</Link>
                         </div>
                         <div>
-                            <a >Help Center</a><br /><br />
-                            <a href="/Home">Corperate Information</a>
+                            <Link to>Help Center</Link>
+                            <br />
+                            <br />
+                            <Link to="/">Corperate Information</Link>
                         </div>
                         <div>
-                            <a href="/Home">Terms of Use</a>
+                            <Link to="/">Terms of Use</Link>
                         </div>
                         <div>
-                            <a href="/Home">Privacy</a>
+                            <Link to="/">Privacy</Link>
                         </div>
                     </div> 
                 </div>

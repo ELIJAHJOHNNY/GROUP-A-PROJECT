@@ -5,7 +5,8 @@ const Languages = () => {
   return (
     <div>
       <Navs/>
-        <h1 className='header-content'>Browse &#38; Languages</h1>
+        <h1 className='header-content'>Browse by Languages</h1>
+        {/* <h1 className='header-content'>Browse &#38; Languages</h1> */}
     </div>
   )
 }

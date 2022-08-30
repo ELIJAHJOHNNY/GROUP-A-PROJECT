@@ -1,4 +1,4 @@
-const key = '105719de0ffa4a3d2bc64b5b9612472f'
+const key = '105719de0ffa4a3d2bc64b5b9612472f';
 
 const requests = {
     requestPopular:
