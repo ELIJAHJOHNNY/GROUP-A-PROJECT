@@ -1,11 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
-import hamburgerReducer from '../reduxSlice/hamburgerSlice'
-import displayMoviesReducer from "../reduxSlice/displayMoviesSlice";
+import hamburgerReducer from '../reduxSlice/hamburgerSlice';
+import searchReducer from "../reduxSlice/searchSlice";
 
 const store = configureStore({
     reducer:{
         hamburger: hamburgerReducer,
-        // displayMovies: displayMoviesReducer
+        search: searchReducer,
     }
 });
 

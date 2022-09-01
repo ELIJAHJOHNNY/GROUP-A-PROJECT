@@ -1,5 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/Nav.css";
+// import 'antd/dist/antd.css';
+
+import { Input } from "antd";
+// import 'antd/es/input/style/index.css';
+
+// antDesign
 import navlogo from "../images/navlogo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -9,24 +15,48 @@ import {
   faChevronDown,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link, useNavigate } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { handleHamburgerToggle } from "../reduxSlice/hamburgerSlice";
+import {
+  handleSearchToggle,
+  removeSearchField,
+} from "../reduxSlice/searchSlice";
 import Sidebar from "./Sidebar";
 
-const Navs = () => {
-  const [searchInput, setSearchInput] = useState("");
+const Navs = ({ movies, setMovies }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  // const [movies, setMovies] = useState([]);
-  // const fetchMovies = () => {
-  //   axios.get(fetchUrl).then(response => {
-  //     setMovies(response.data.results);
-  //   });
-  // };
-  // const searchHandler = value => {
-  // const searchResult = {movies.filter()}
-  //   console.log(searchInput);
-  // };
+  const { isSearchActive } = useSelector(state => state.search);
+
+  // antdesign
+  const { Search } = Input;
+
+  const onSearch = value => {
+    const navMovies = movies;
+    navMovies.filter(movie => movie.includes(value));
+    // console.log(value)
+    // setMovies(
+    //   dummyData.filter((item) => item.includes(value))
+    //   dummyData.filter((item) => item.toLowerCase().includes(value.toLowerCase()))
+    // )
+  };
+
+  //remove search field when window is resized
+  // useEffect(() => {
+  //   function removeSearch() {
+  //     dispatch(removeSearchField())
+  //   }
+  //   window.addEventListener('resize', removeSearch);
+  //   // window.addEventListener('', removeSearch);
+  // }, []);
+
+  function removeSearch() {
+    dispatch(removeSearchField());
+  }
+  window.addEventListener("resize", removeSearch);
+
+  //remove search field when window is resized
+
   const logOut = () => {
     if (window.confirm("Logout?")) {
       navigate("/");
@@ -74,32 +104,51 @@ const Navs = () => {
             </li>
           </ul>
           <ul className="nav2">
-            <li className="cursor-pointer">
-              {/* <input
-                type="text"
-                placeholder="Search movies"
-                className="bg-white text-black"
-                value={searchInput}
-                onChange={e => setSearchInput(e.target.value)}
-              /> */}
-              <FontAwesomeIcon
-                id="search-icon"
-                icon={faSearch}
-                // onClick={searchHandler}
+            <li onMouseLeave={removeSearch}>
+              <Search
+                placeholder="search"
+                allowClear
+                onChange={e => onSearch(e.target.value)}
+                className={` ${isSearchActive ? "show-search-field" : ""}`}
+                // onSearch={onSearch}
+                style={{ width: 150, display: "none", marginRight: "1rem" }}
               />
             </li>
-            <li>
-              <Link to="/Kids">Kids</Link>
+
+            {/* <div id="navRight" className='flex'> */}
+
+            <li
+              className="cursor-pointer"
+              onClick={() => dispatch(handleSearchToggle())}
+            >
+              <FontAwesomeIcon
+                className={`search-icon ${
+                  isSearchActive ? "hide-search-icon" : ""
+                }`}
+                id="search-icon"
+                icon={faSearch}
+              />
             </li>
-            <li>
-              <Link to="/Notifications">
-                <FontAwesomeIcon id="notify" icon={faBell} />
-              </Link>
-            </li>
-            <li className="cursor-pointer" onClick={logOut}>
-              <FontAwesomeIcon id="user" icon={faUser} />
-            </li>
-            {/* <li><Link to='/User'><FontAwesomeIcon id='user' icon={faUser}/></Link></li> */}
+
+            {/* <li><Link to='/Kids'>Kids</Link></li>
+                <li><Link to='/Notifications'><FontAwesomeIcon id='notify' icon={faBell}/></Link></li>
+                <li className='cursor-pointer' onClick={logOut}><FontAwesomeIcon id='user' icon={faUser}/></li> */}
+
+            <div className={`normal-view ${isSearchActive ? "flex" : ""}`}>
+              <li>
+                <Link to="/Kids">Kids</Link>
+              </li>
+              <li>
+                <Link to="/Notifications">
+                  <FontAwesomeIcon id="notify" icon={faBell} />
+                </Link>
+              </li>
+              <li className="cursor-pointer" onClick={logOut}>
+                <FontAwesomeIcon id="user" icon={faUser} />
+              </li>
+            </div>
+
+            {/* </div> */}
           </ul>
         </div>
       </section>

@@ -16,7 +16,7 @@ const Homepage = () => {
       setMovies(response.data.results);
     });
   }, []);
-  console.log(movie);
+  // console.log(movie);
 
   const trucateOverview = (str, num) => {
     if (str?.length > num) {
@@ -26,18 +26,18 @@ const Homepage = () => {
 
   return (
     <div className="w-full h-[90vh]  text-white">
-      <Navs />
+      <Navs movies={movies} setMovies={setMovies} />
       {/* <div className="w-full lg:h-[550px] sm:h-[300px] md:h-[400px]  text-white"> */}
       <div className="w-full h-full">
         {/* <div className="w-full lg:h-[550px] md:h-[400px] sm:h-[300px] absolute"></div> */}
-        <div className="w-full h-full bg-gradient-to-r from-black absolute"></div>
+        <div className="w-full lg:h-[550px] md:h-[400px] sm:h-[300px] bg-gradient-to-r from-black absolute"></div>
         <img
           className="w-full h-[100vh]  object-cover"
           // className="w-full h-full  object-cover"
           src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`}
           alt={movie?.title}
         />
-        <div className="absolute xs:top-[8%] xs:w-[60%] sm:w-[40%] left-[2%] sm:top-[15%] md:top-[20%] lg:top-[35%] xl:top-[30%]">
+        <div className="absolute xs:top-[8%] xs:w-[60%] left-[2%] sm:top-[15%] md:top-[20%] lg:top-[35%] xl:top-[30%]">
           <h3 className="font-perm text-[15px] sm:text-[30px] md:text-[35px] lg:text-[40px] xl:text-[55px] pb-5">
             {movie?.title}
           </h3>
@@ -47,7 +47,7 @@ const Homepage = () => {
           <Button
             color="primary"
             variant="contained"
-            startIcon={<PlayArrowIcon sx={{ color: "#000000" }} />}
+            startIcon={<PlayArrowIcon />}
             sx={{
               mt: {
                 xs: "10px",

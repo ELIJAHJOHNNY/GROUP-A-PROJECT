@@ -21,11 +21,11 @@ function Login() {
                 <form onSubmit={getStarted}>
                     <h1>Sign In</h1>
                     <div className="form-group">
-                        <input type="text" name='text' required/>
+                        <input type="email" name='text' required/>
                         <label htmlFor='text'>Email or phone number</label>
                     </div>
                     <div className="form-group">
-                        <input type="password" name='password' required/>
+                        <input type="password" name='password' pattern='[0-9]{5}' title='Must be five digits' required/>
                         <label htmlFor='password'>Password</label>
                     </div>
                     <button>Sign In</button>
