@@ -5,17 +5,17 @@ import requests from "../Requests";
 const Main = () => {
   const [movies, setMovies] = useState([]);
   const movie = movies[Math.floor(Math.random() * movies.length)];
-
-  useEffect(() => {
+  const fetchMovies = () => {
     axios.get(requests.requestPopular).then(response => {
       setMovies(response.data.results);
     });
-  }, []);
+  };
+  useEffect(fetchMovies(), []);
   // console.log(movie);
 
   return (
     <div className="w-full h-[100vh] text-white">
-    {/* <div className="w-full h-[650px] text-white"> */}
+      {/* <div className="w-full h-[650px] text-white"> */}
       <div className="w-full h-full flex items-center justify-center">
         <div className="w-full h-[650px] bg-gradient-to-r from-black absolute"></div>
         <img

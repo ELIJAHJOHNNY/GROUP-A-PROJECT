@@ -1,22 +1,23 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    isHamActive: false
-}
+  isHamActive: false,
+  movies: [],
+};
 
 const hamburgerSlice = createSlice({
-    name: 'hamburger',
-    initialState,
-    reducers:{
-        handleHamburgerToggle: (state) => {
-            state.isHamActive = !state.isHamActive
-        },
-        removeSidebar: (state) => {
-            state.isHamActive = false
-        }
-    }
-})
+  name: "hamburger",
+  initialState,
+  reducers: {
+    handleHamburgerToggle: state => {
+      state.isHamActive = !state.isHamActive;
+    },
+    removeSidebar: state => {
+      state.isHamActive = false;
+    },
+  },
+});
 
 export const { handleHamburgerToggle, removeSidebar } = hamburgerSlice.actions;
 
-export default hamburgerSlice.reducer
+export default hamburgerSlice.reducer;
