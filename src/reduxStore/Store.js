@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
-import hamburgerReducer from '../reduxSlice/hamburgerSlice'
+import hamburgerReducer from '../reduxSlice/hamburgerSlice';
+import searchReducer from "../reduxSlice/searchSlice";
 
 const store = configureStore({
     reducer:{
-        hamburger: hamburgerReducer
+        hamburger: hamburgerReducer,
+        search: searchReducer,
     }
 });
 

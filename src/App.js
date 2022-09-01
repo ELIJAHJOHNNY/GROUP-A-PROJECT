@@ -12,6 +12,7 @@ import SharedLayout from './component/SharedLayout';
 import Login from './component/Login';
 import Remember from './component/Remember';
 import AllMovies from './component/AllMovies';
+import Search from './component/Search';
 // import Forgot from './component/Forgot';
 import './App.css';
 import LandingPage from './pages/LandingPage';
@@ -56,7 +57,7 @@ function App() {
             <Route path='/PageForm' element={<PageForm/>}/>
             <Route path='/Remember' element={<Remember/>}/>
             <Route path='/AllMovies' element={<AllMovies/>}/>
-            <Route path='/SharedLayout' element={<SharedLayout/>}/>
+            <Route path='/Search' element={<Search/>}/>
           </Routes>
         </div>
       </ThemeProvider>

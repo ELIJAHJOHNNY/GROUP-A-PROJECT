@@ -16,7 +16,7 @@ const Homepage = () => {
       setMovies(response.data.results);
     });
   }, []);
-  console.log(movie);
+  // console.log(movie);
 
   const trucateOverview = (str, num) => {
     if (str?.length > num) {
@@ -26,7 +26,7 @@ const Homepage = () => {
 
   return (
     <div className="w-full h-[90vh]  text-white">
-      <Navs/>
+      <Navs movies={movies} setMovies={setMovies} />
     {/* <div className="w-full lg:h-[550px] sm:h-[300px] md:h-[400px]  text-white"> */}
       <div className="w-full h-full">
         {/* <div className="w-full lg:h-[550px] md:h-[400px] sm:h-[300px] absolute"></div> */}
