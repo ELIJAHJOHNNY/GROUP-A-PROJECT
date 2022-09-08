@@ -12,28 +12,15 @@
   color: black;
 }
 
-<<<<<<< HEAD
 .nav-container .nav-logo {
   /* border: 1px solid; */
-  flex: 0.15;
+  flex: 0.1;
   align-self: center;
   justify-items: center;
 }
 
 .nav-container .nav-logo #img {
-  width: 150px;
-  /* vertical-align: middle; */
-=======
-.nav-container .nav-logo{
-    /* border: 1px solid; */
-    flex: 0.1;
-    align-self: center;
-    justify-items: center;
-}
-
-.nav-container .nav-logo #img{
-    width: 120px;
->>>>>>> 55b97fcab7446001aab7441636b645e27396f506
+  width: 120px;
 }
 
 .nav-container .navlinks {
@@ -45,30 +32,17 @@
   /* border: 1px solid; */
 }
 
-<<<<<<< HEAD
 .nav-container .navlinks .nav1 {
-  flex: 0.6;
+  flex: 0.65;
   justify-content: space-between;
-  color: white;
+  margin-left: 1rem;
+  /* border: 1px solid; */
 }
 
 .nav-container .navlinks .nav2 {
-  flex: 0.12;
+  flex: 0.15;
   justify-content: space-between;
   /* border: 1px solid; */
-=======
-.nav-container .navlinks .nav1{
-    flex: 0.65;
-    justify-content: space-between;
-    margin-left: 1rem;
-    /* border: 1px solid; */
-}
-
-.nav-container .navlinks .nav2{
-    flex: 0.15;
-    justify-content: space-between;
-    /* border: 1px solid; */
->>>>>>> 55b97fcab7446001aab7441636b645e27396f506
 }
 
 .nav-container .navlinks .nav1,
@@ -101,36 +75,34 @@
 /* SEARCH */
 
 .search-field {
-    padding: 0.5em;
-    display: none;
+  padding: 0.5em;
+  display: none;
 }
 
 .show-search-field {
-    display: block !important;
+  display: block !important;
 }
 
-.search-icon{
-    /* border:1px solid; */
-    /* margin-right: 2rem; */
-}
+/* .search-icon{
+    border:1px solid;
+    margin-right: 2rem;
+} */
 
 .hide-search-icon {
-    display: none;
+  display: none;
 }
 
-.normal-view{
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    flex:0.7;
-    /* border:1px solid; */
+.normal-view {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0.7;
+  /* border:1px solid; */
 }
 
-.flex{
-    display: none;
+.flex {
+  display: none;
 }
-
-
 
 /* SEARCH ENDS */
 

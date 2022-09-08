@@ -6,7 +6,6 @@ import Movie from "./Movie";
 
 const MoviePage = ({ title, fetchUrl, rowId }) => {
   const [movies, setMovies] = useState([]);
-  // const [slide, setSlide] = useState();
 
   useEffect(() => {
     axios.get(fetchUrl).then(response => {
@@ -24,26 +23,6 @@ const MoviePage = ({ title, fetchUrl, rowId }) => {
     const slider = document.getElementById("slider" + rowId);
     slider.scrollLeft = slider.scrollLeft + 500;
   };
-
-  // const prevSlide = () => {
-  //   if (movies.length === 1) {
-  //     setSlide(movies.length);
-  //   } else if (movies.length > 1) {
-  //     setSlide(movies.length - 1);
-  //   } else {
-  //     setSlide(slide);
-  //   }
-  // };
-
-  // const nextSlide = () => {
-  //   if (movies.length === 1) {
-  //     setSlide(movies.length + 1);
-  //   } else if (movies.length > 1) {
-  //     setSlide(movies.length + 1);
-  //   } else {
-  //     setSlide(slide);
-  //   }
-  // };
 
   return (
     <div>
