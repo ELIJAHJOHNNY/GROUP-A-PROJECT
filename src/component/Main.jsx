@@ -15,18 +15,18 @@ const Main = () => {
   //     setMovies(data.results)
   //   })
   // })
-  
+
   useEffect(() => {
     axios.get(requests.requestPopular).then(response => {
       setMovies(response.data.results);
     });
   }, []);
-  // console.log(movie);
+  // console.log(movie)
 
   return (
     <div className="w-full h-[100vh] text-white">
       {/* <p className="bg-red">me</p> */}
-    {/* <div className="w-full h-[650px] text-white"> */}
+      {/* <div className="w-full h-[650px] text-white"> */}
       <div className="w-full h-full flex items-center justify-center">
         <div className="w-full h-[650px] bg-gradient-to-r from-black absolute"></div>
         <img

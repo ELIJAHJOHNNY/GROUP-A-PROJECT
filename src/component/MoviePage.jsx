@@ -6,7 +6,6 @@ import Movie from "./Movie";
 
 const MoviePage = ({ title, fetchUrl, rowId }) => {
   const [movies, setMovies] = useState([]);
-  // const [slide, setSlide] = useState();
 
   // useEffect(() => {
   //   fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=105719de0ffa4a3d2bc64b5b9612472f&language=en-US')
@@ -41,26 +40,6 @@ const MoviePage = ({ title, fetchUrl, rowId }) => {
     const slider = document.getElementById("slider" + rowId);
     slider.scrollLeft = slider.scrollLeft + 500;
   };
-
-  // const prevSlide = () => {
-  //   if (movies.length === 1) {
-  //     setSlide(movies.length);
-  //   } else if (movies.length > 1) {
-  //     setSlide(movies.length - 1);
-  //   } else {
-  //     setSlide(slide);
-  //   }
-  // };
-
-  // const nextSlide = () => {
-  //   if (movies.length === 1) {
-  //     setSlide(movies.length + 1);
-  //   } else if (movies.length > 1) {
-  //     setSlide(movies.length + 1);
-  //   } else {
-  //     setSlide(slide);
-  //   }
-  // };
 
   return (
     <div>

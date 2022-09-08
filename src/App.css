@@ -1,6 +1,10 @@
-.header-content{
-    margin-top: 10px;
-    text-align: center;
-    font-size: 50px;
-    font-weight: 900;
+.header-content {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+body {
+  background-color: black;
 }

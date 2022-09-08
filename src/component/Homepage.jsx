@@ -5,7 +5,7 @@ import Button from "@mui/material/Button";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import MoviePage from "./MoviePage";
-import Navs from './Navs';
+import Navs from "./Navs";
 
 const Homepage = () => {
   const [movies, setMovies] = useState([]);
@@ -27,10 +27,9 @@ const Homepage = () => {
   return (
     <div className="w-full h-[90vh]  text-white">
       <Navs />
-    {/* <div className="w-full lg:h-[550px] sm:h-[300px] md:h-[400px]  text-white"> */}
+      {/* <div className="w-full lg:h-[550px] sm:h-[300px] md:h-[400px]  text-white"> */}
       <div className="w-full h-full">
-        {/* <div className="w-full lg:h-[550px] md:h-[400px] sm:h-[300px] absolute"></div> */}
-        <div className="w-full lg:h-[550px] md:h-[400px] sm:h-[300px] bg-gradient-to-r from-black absolute"></div>
+        <div className="w-full lg:h-full md:h-[400px] sm:h-[300px] bg-gradient-to-r from-black absolute"></div>
         <img
           className="w-full h-[100vh]  object-cover"
           // className="w-full h-full  object-cover"
