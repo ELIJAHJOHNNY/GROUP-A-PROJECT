@@ -21,7 +21,7 @@ const Main = () => {
       setMovies(response.data.results);
     });
   }, []);
-  console.log(movie);
+  // console.log(movie);
 
   return (
     <div className="w-full h-[100vh] text-white">
