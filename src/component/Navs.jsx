@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import '../styles/Nav.css';
 // import 'antd/dist/antd.css';
 
 import { Input } from 'antd';
-// import 'antd/es/input/style/index.css';
+import 'antd/es/input/style/index.css';
 
 // antDesign
 import navlogo from '../images/navlogo.svg'
@@ -15,7 +15,7 @@ import { handleHamburgerToggle } from '../reduxSlice/hamburgerSlice';
 import { handleSearchToggle, removeSearchField } from '../reduxSlice/searchSlice';
 import Sidebar from './Sidebar';
 
-const Navs = ({ movies, setMovies }) => {
+const Navs = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { isSearchActive }  = useSelector((state) => state.search);
@@ -23,14 +23,15 @@ const Navs = ({ movies, setMovies }) => {
   // antdesign
   const { Search } = Input;
 
-  const onSearch = (value) => {
-    const navMovies = movies;
-    navMovies.filter((movie) => movie.includes(value) )
+  const onSearch = () => {
+    // const navMovies = movies;
+    // navMovies.filter((movie) => movie.includes(value) )
     // console.log(value)
     // setMovies(
     //   dummyData.filter((item) => item.includes(value))
     //   dummyData.filter((item) => item.toLowerCase().includes(value.toLowerCase()))
     // )
+    console.log('Welcome')
   };
 
   //remove search field when window is resized
@@ -105,7 +106,7 @@ const Navs = ({ movies, setMovies }) => {
                 <li><Link to='/Notifications'><FontAwesomeIcon id='notify' icon={faBell}/></Link></li>
                 <li className='cursor-pointer' onClick={logOut}><FontAwesomeIcon id='user' icon={faUser}/></li> */}
 
-              <div className={`normal-view ${isSearchActive ? 'flex' : "" }`}>
+              <div className={`normal-view ${isSearchActive ? 'show' : "" }`}>
                 <li><Link to='/Kids'>Kids</Link></li>
                 <li><Link to='/Notifications'><FontAwesomeIcon id='notify' icon={faBell}/></Link></li>
                 <li className='cursor-pointer' onClick={logOut}><FontAwesomeIcon id='user' icon={faUser}/></li>

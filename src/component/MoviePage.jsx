@@ -8,12 +8,29 @@ const MoviePage = ({ title, fetchUrl, rowId }) => {
   const [movies, setMovies] = useState([]);
   // const [slide, setSlide] = useState();
 
+  // useEffect(() => {
+  //   fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=105719de0ffa4a3d2bc64b5b9612472f&language=en-US')
+  //   // fetch(fetchUrl)
+  //   .then((res) => res.json())
+  //   .then((data) => {
+  //     console.log(data.results)
+  //     setMovies(data.results)
+  //   })
+  // })
   useEffect(() => {
-    axios.get(fetchUrl).then(response => {
+  //   axios.get('https://api.themoviedb.org/3/movie/top_rated?api_key=105719de0ffa4a3d2bc64b5b9612472f&language=en-US')
+  //   // axios.get(fetchUrl)
+  //   .then((res) => {
+  //     console.log(res.data.results)
+  //     // setMovies(res.data.results)
+  //   })
+
+    axios.get(fetchUrl)
+    .then((response) => {
       setMovies(response.data.results);
     });
-  }, [fetchUrl]);
-  // console.log(movies);
+  });
+  console.log(movies);
 
   const prevSlide = () => {
     const slider = document.getElementById("slider" + rowId);
@@ -47,6 +64,11 @@ const MoviePage = ({ title, fetchUrl, rowId }) => {
 
   return (
     <div>
+      {/* {
+        movies.map((movie) => (
+          <p>{movie.title}</p>
+        ))
+      } */}
       {/* <Navs/> */}
       <h2 className="text-white pl-5 mt-[15px] pb-1 font-bold sm:text-[14px] lg:text-[16px] xl:text-[18px] sm:pt-[1px] ">
         {title}

@@ -26,7 +26,7 @@ const Homepage = () => {
 
   return (
     <div className="w-full h-[90vh]  text-white">
-      <Navs movies={movies} setMovies={setMovies} />
+      <Navs />
     {/* <div className="w-full lg:h-[550px] sm:h-[300px] md:h-[400px]  text-white"> */}
       <div className="w-full h-full">
         {/* <div className="w-full lg:h-[550px] md:h-[400px] sm:h-[300px] absolute"></div> */}

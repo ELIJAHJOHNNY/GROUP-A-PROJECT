@@ -15,7 +15,7 @@ function Login() {
         <title>Netflix SignIn Page</title>
     </head> */}
 
-    <body>
+    <>
         <div className="login-container">
             <div className="form-container">
                 <form onSubmit={getStarted}>
@@ -43,13 +43,13 @@ function Login() {
                     </div>
                     <p className="captcha">
                         This page is protected by Google reCAPTCHA to ensure you're not a bot. 
-                        <a href="https://www.netflix.com" target='_blank'> Learn more </a>
+                        <a href="https://www.netflix.com" target='_blank' rel='noreferrer'> Learn more </a>
                     </p>
                 </form>
             </div>
            
         </div>
-    </body>
+    </>
      <Footer/>
     </div>
   );

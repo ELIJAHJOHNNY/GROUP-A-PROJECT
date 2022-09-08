@@ -7,6 +7,7 @@ const LandingPage = () => {
     <div>
       <NavbarLP />
       <Main />
+      {/* <h1>Landing Page</h1> */}
     </div>
   );
 };

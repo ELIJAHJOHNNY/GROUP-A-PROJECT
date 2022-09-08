@@ -76,16 +76,10 @@
 
 .search-field {
     padding: 0.5em;
-    display: none;
 }
 
 .show-search-field {
     display: block !important;
-}
-
-.search-icon{
-    /* border:1px solid; */
-    /* margin-right: 2rem; */
 }
 
 .hide-search-icon {
@@ -100,7 +94,7 @@
     /* border:1px solid; */
 }
 
-.flex{
+.show{
     display: none;
 }
 
