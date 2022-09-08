@@ -76,7 +76,6 @@
 
 .search-field {
   padding: 0.5em;
-  display: none;
 }
 
 .show-search-field {
@@ -100,7 +99,7 @@
   /* border:1px solid; */
 }
 
-.flex {
+.show {
   display: none;
 }
 

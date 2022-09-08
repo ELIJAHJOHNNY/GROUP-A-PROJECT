@@ -11,18 +11,14 @@ const UserPage = () => {
         rowId="1"
         title="Top Rated"
         fetchUrl={requests.requestTopRated}
-        className="z-50"
+        // fetchUrl='https://api.themoviedb.org/3/movie/top_rated?api_key=105719de0ffa4a3d2bc64b5b9612472f&language=en-US'
       />
       <MoviePage
         rowId="2"
         title="Upcoming"
         fetchUrl={requests.requestUpcoming}
       />
-      <MoviePage 
-        rowId="3" 
-        title="Popular" 
-        fetchUrl={requests.requestPopular} 
-      />
+      <MoviePage rowId="3" title="Popular" fetchUrl={requests.requestPopular} />
     </div>
   );
 };
