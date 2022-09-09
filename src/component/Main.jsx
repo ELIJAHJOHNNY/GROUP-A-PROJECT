@@ -51,7 +51,7 @@ const Main = () => {
             </p>
             <div className="xs:mx-3 my-3 flex items-center">
               <input
-                className="xs:w-[60%] sm:w-[70%] h-[55px] pl-4 bg-white"
+                className="xs:w-[70%] sm:w-[70%] h-[55px] pl-4 bg-white"
                 placeholder="Email Address"
                 required
               />

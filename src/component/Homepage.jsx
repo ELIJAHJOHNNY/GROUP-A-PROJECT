@@ -30,7 +30,7 @@ const Homepage = () => {
       <Navs />
       {/* <div className="w-full lg:h-[550px] sm:h-[300px] md:h-[400px]  text-white"> */}
       <div className="w-full h-full">
-        <div className="w-full xs:h-[55vh] sm:h-full bg-gradient-to-r from-black absolute"></div>
+        <div className="w-full h-full bg-gradient-to-r from-black absolute"></div>
         <img
           className="w-full xs:h-[90vh] sm:min-h-screen  object-cover"
           // className="w-full xs:h-[90vh] sm:h-[90vh]  object-cover"
