@@ -27,7 +27,7 @@ const Main = () => {
     <div className="w-full h-[100vh] text-white">
       {/* <p className="bg-red">me</p> */}
       {/* <div className="w-full h-[650px] text-white"> */}
-      <div className="w-full h-full flex items-center justify-center">
+      <div className="w-full xs:min-h-screen sm:h-full flex items-center justify-center">
         <div className="w-full h-full bg-gradient-to-r from-black absolute"></div>
         <img
           className="w-full h-full xs:object-fill sm:object-cover"
