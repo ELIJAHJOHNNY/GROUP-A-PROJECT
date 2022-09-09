@@ -55,7 +55,7 @@ const Main = () => {
                 placeholder="Email Address"
                 required
               />
-              <button className="bg-red-600 rounded xs:px-2 sm:px-6 py-1 cursor-pointer xs:text-[11px] sm:text-[15px] xs:w-[30%] text-white  h-[55px]">
+              <button className="bg-red-600 xs:px-3 sm:px-3 py-1 cursor-pointer xs:text-[11px] sm:text-[15px] xs:w-[40%] text-white sm:w-[30%]  h-[55px]">
                 Get Started
               </button>
             </div>

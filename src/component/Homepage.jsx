@@ -25,13 +25,15 @@ const Homepage = () => {
   };
 
   return (
-    <div className="w-full xs:h-[45vh] sm:h-[90vh]  text-white">
+    <div className="w-full sm:h-[90vh]  text-white">
+    {/* <div className="w-full xs:h-[100vh] sm:h-[90vh]  text-white"> */}
       <Navs />
       {/* <div className="w-full lg:h-[550px] sm:h-[300px] md:h-[400px]  text-white"> */}
       <div className="w-full h-full">
         <div className="w-full h-full bg-gradient-to-r from-black absolute"></div>
         <img
-          className="w-full xs:h-[55vh] sm:h-[100vh]  object-cover"
+          className="w-full xs:h-[90vh] sm:min-h-screen  object-cover"
+          // className="w-full xs:h-[90vh] sm:h-[90vh]  object-cover"
           // className="w-full h-full  object-cover"
           src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`}
           alt={movie?.title}
