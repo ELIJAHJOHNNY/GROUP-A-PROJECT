@@ -24,7 +24,7 @@ const NavbarLP = () => {
       </h1> */}
       <button
         onClick={Signin}
-        className="bg-red-600 xs:px-3 xs:py-1 xs:text-[11px] sm:text-[16px] sm:px-6 sm:py-2  cursor-pointer text-white rounded"
+        className="bg-red-600 xs:px-4 xs:py-1 xs:text-[10px] sm:text-[16px] sm:px-6 sm:py-2  cursor-pointer text-white rounded"
       >
         Sign In
       </button>
