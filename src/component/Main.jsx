@@ -51,11 +51,11 @@ const Main = () => {
             </p>
             <div className="xs:mx-3 my-3 flex items-center">
               <input
-                className="xs:w-[60%] sm:w-[70%] h-[55px] pl-4 bg-white"
+                className="xs:w-[70%] sm:w-[70%] h-[55px] pl-4 bg-white"
                 placeholder="Email Address"
                 required
               />
-              <button className="bg-red-600 xs:px-2 sm:px-6 py-1 cursor-pointer xs:text-[11px] sm:text-[15px] xs:w-[40%] text-white sm:w-[30%]  h-[55px]">
+              <button className="bg-red-600 rounded xs:px-2 sm:px-6 py-1 cursor-pointer xs:text-[11px] sm:text-[15px] xs:w-[30%] text-white  h-[55px]">
                 Get Started
               </button>
             </div>
