@@ -9,7 +9,7 @@
   height: 10vh;
   padding: 0.5rem 1.5rem;
   /* border: 1px solid; */
-  color: black;
+  color: white;
 }
 
 .nav-container .nav-logo {
@@ -84,7 +84,8 @@
 
 /* .search-icon{
     border:1px solid;
-    margin-right: 2rem;
+    margin-right: 0.5rem;
+    display: none;
 } */
 
 .hide-search-icon {
@@ -95,7 +96,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex: 0.7;
+  flex: 0.6;
   /* border:1px solid; */
 }
 
@@ -141,5 +142,9 @@
   .nav-container .navlinks .nav2 {
     flex: 1;
     /* border: 1px solid; */
+  }
+
+  .normal-view{
+    flex: 1;
   }
 }

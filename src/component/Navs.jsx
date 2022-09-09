@@ -69,7 +69,6 @@ const Navs = () => {
     <>
       <section className="nav-container">
         <div className="nav-logo">
-          {/* <span>Me</span> */}
           <Link to="/Home">
             <img id="img" src={navlogo} alt="NETFLIX" />
           </Link>
@@ -115,9 +114,7 @@ const Navs = () => {
               />
             </li>
 
-            {/* <div id="navRight" className='flex'> */}
-
-            <li
+            {/* <li
               className="cursor-pointer"
               onClick={() => dispatch(handleSearchToggle())}
             >
@@ -128,12 +125,23 @@ const Navs = () => {
                 id="search-icon"
                 icon={faSearch}
               />
-            </li>
+            </li> */}
 
-            {/* <li><Link to='/Kids'>Kids</Link></li>
-                <li><Link to='/Notifications'><FontAwesomeIcon id='notify' icon={faBell}/></Link></li>
-                <li className='cursor-pointer' onClick={logOut}><FontAwesomeIcon id='user' icon={faUser}/></li> */}
             <div className={`normal-view ${isSearchActive ? "show" : ""}`}>
+
+              <li
+                className="cursor-pointer"
+                onClick={() => dispatch(handleSearchToggle())}
+              >
+                <FontAwesomeIcon
+                  className={`search-icon ${
+                    isSearchActive ? "hide-search-icon" : ""
+                  }`}
+                  id="search-icon"
+                  icon={faSearch}
+                />
+              </li>
+
               <li>
                 <Link to="/Kids">Kids</Link>
               </li>
