@@ -17,15 +17,14 @@ const MoviePage = ({ title, fetchUrl, rowId }) => {
   //   })
   // })
   useEffect(() => {
-  //   axios.get('https://api.themoviedb.org/3/movie/top_rated?api_key=105719de0ffa4a3d2bc64b5b9612472f&language=en-US')
-  //   // axios.get(fetchUrl)
-  //   .then((res) => {
-  //     console.log(res.data.results)
-  //     // setMovies(res.data.results)
-  //   })
+    //   axios.get('https://api.themoviedb.org/3/movie/top_rated?api_key=105719de0ffa4a3d2bc64b5b9612472f&language=en-US')
+    //   // axios.get(fetchUrl)
+    //   .then((res) => {
+    //     console.log(res.data.results)
+    //     // setMovies(res.data.results)
+    //   })
 
-    axios.get(fetchUrl)
-    .then((response) => {
+    axios.get(fetchUrl).then(response => {
       setMovies(response.data.results);
     });
   });
@@ -57,6 +56,7 @@ const MoviePage = ({ title, fetchUrl, rowId }) => {
           onClick={prevSlide}
           className="bg-white rounded-full absolute opacity-50 hover:opacity-100 cursor-pointer z-10 hidden group-hover:block"
           size={40}
+          color="black"
         />
         <div
           id={"slider" + rowId}
@@ -70,6 +70,7 @@ const MoviePage = ({ title, fetchUrl, rowId }) => {
           onClick={nextSlide}
           className="bg-white rounded-full absolute opacity-50 hover:opacity-100 cursor-pointer right-0 hidden group-hover:block"
           size={40}
+          color="black"
         />
       </div>
     </div>
