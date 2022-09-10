@@ -12,7 +12,7 @@ function PageForm(props) {
            <div className="pageformhead">
             <Link to='/'> <img className="pageformhead-item pageformhead-item1" src={logo} alt="logo" /> </Link>
               <div className="pageformhead-item pageformhead-item2">
-                <a href="/Login">Sign In</a>
+                <Link to="/Login" className='text-red-600'>Sign In</Link>
               </div>
            </div>
            <form className="pageformbox1">
@@ -34,8 +34,7 @@ function PageForm(props) {
            <div className='footerpageform1' style={{height:"230px"}}>
                 <div className="footerpageform-box ">
                     <div className="pageformcontact">
-                        <a>Questions? <a href="tel:000-800-040-1843">Contact us
-                        </a></a>
+                        <p>Questions? <a href="tel:000-800-040-1843">Contact us</a></p>
                     </div>
                     <div className="footerpage4">
                         <div>

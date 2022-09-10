@@ -1,5 +1,5 @@
 import '../styles/Login.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import Footer from './Footer';
 
 function Login() {
@@ -35,11 +35,11 @@ function Login() {
                             <label htmlFor="remember"> Remember Me</label>
                         </div>
                         <div className="right">
-                            <a href="/ForgotPassword">Need help?</a>
+                            <Link to="/ForgotPassword">Need help?</Link>
                         </div>
                     </div>
                     <div className="signup">
-                        <p>New to Netflix? <a href="/PageForm">Sign up now</a>.</p>
+                        <p>New to Netflix? <Link to="/PageForm">Sign up now</Link>.</p>
                     </div>
                     <p className="captcha">
                         This page is protected by Google reCAPTCHA to ensure you're not a bot. 

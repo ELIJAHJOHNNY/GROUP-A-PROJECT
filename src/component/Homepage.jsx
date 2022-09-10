@@ -4,7 +4,7 @@ import requests from "../Requests";
 import Button from "@mui/material/Button";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
-import MoviePage from "./MoviePage";
+// import MoviePage from "./MoviePage";
 import Navs from "./Navs";
 
 const Homepage = () => {
